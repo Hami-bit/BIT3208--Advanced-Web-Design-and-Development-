@@ -3,7 +3,17 @@
 // Handles login form POST, validates credentials, starts session
 
 session_start();
-require_once 'includes/db.php';
+require_once __DIR__ . '/includes/db.php';
+
+if (!isset($conn)) {
+    if (isset($connection)) {
+        $conn = $connection;
+    } elseif (isset($db)) {
+        $conn = $db;
+    } else {
+        die('Database connection not established.');
+    }
+}
 
 // If already logged in, redirect to dashboard
 if (isset($_SESSION['user_id'])) {

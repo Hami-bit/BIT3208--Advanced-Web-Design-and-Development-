@@ -42,7 +42,7 @@ BIT3208_Project/
    | Username | Password | Role  |
    |----------|----------|-------|
    | admin    | password | Admin |
-   | john     | password | User  |
+    | mike     | password | User  |
    | alice    | password | User  |
 
 ---

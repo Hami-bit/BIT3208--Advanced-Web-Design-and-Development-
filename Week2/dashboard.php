@@ -24,8 +24,8 @@
         <!-- Sidebar -->
         <aside class="sidebar">
             <div class="sidebar-user">
-                <div class="avatar">JD</div>
-                <p>John Doe</p>
+                <div class="avatar">MM</div>
+                <p>Mike Milton</p>
                 <small>Savings Account</small>
             </div>
             <ul class="sidebar-nav">
@@ -41,7 +41,7 @@
 
         <!-- Main Content -->
         <main class="main-content">
-            <h1 class="page-title">Good morning, John </h1>
+            <h1 class="page-title">Good morning, Mike </h1>
             <p class="page-subtitle">Here's your account overview</p>
 
             <!-- Stat Cards -->

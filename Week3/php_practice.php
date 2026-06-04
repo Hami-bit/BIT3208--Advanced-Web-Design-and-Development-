@@ -23,7 +23,7 @@ echo "</ul>";
 
 // 3. Associative Array
 $user = [
-    "name"     => "John Doe",
+    "name"     => "Mike Milton",
     "balance"  => 45200,
     "account"  => "Savings"
 ];

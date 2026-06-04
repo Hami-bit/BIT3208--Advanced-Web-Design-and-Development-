@@ -107,19 +107,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="form-row">
                 <div class="form-group">
                     <label>First Name</label>
-                    <input type="text" name="first_name" value="<?php echo isset($firstName) ? htmlspecialchars($firstName) : ''; ?>" placeholder="John">
+                    <input type="text" name="first_name" value="<?php echo isset($firstName) ? htmlspecialchars($firstName) : ''; ?>" placeholder="Mike">
                     <span class="error-msg">First name is required</span>
                 </div>
                 <div class="form-group">
                     <label>Last Name</label>
-                    <input type="text" name="last_name" value="<?php echo isset($lastName) ? htmlspecialchars($lastName) : ''; ?>" placeholder="Doe">
+                    <input type="text" name="last_name" value="<?php echo isset($lastName) ? htmlspecialchars($lastName) : ''; ?>" placeholder="Milton">
                     <span class="error-msg">Last name is required</span>
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Email Address</label>
-                <input type="email" name="email" value="<?php echo isset($email) ? htmlspecialchars($email) : ''; ?>" placeholder="john@example.com">
+                <input type="email" name="email" value="<?php echo isset($email) ? htmlspecialchars($email) : ''; ?>" placeholder="mike@gmail.com">
                 <span class="error-msg">Valid email is required</span>
             </div>
 

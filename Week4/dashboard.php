@@ -2,8 +2,8 @@
 // Week 4 - dashboard.php
 // Protected page - requires login session
 
-require_once 'includes/auth.php';
-require_once 'includes/db.php';
+require_once __DIR__ . '/includes/auth.php';
+require_once __DIR__ . '/includes/db.php';
 
 // Fetch fresh user balance from database
 $query  = "SELECT balance, account_number, account_type FROM users WHERE id = ?";

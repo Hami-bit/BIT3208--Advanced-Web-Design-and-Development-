@@ -72,11 +72,11 @@ VALUES (
     'NXB-0001-2024', 100000.00
 );
 
--- Demo user: john / password = 'password'
+-- Demo user: mike / password = 'password'
 INSERT INTO users (first_name, last_name, email, phone, account_type, username, password, account_number, balance)
 VALUES (
-    'John', 'Doe', 'john@example.com', '+254700000002',
-    'savings', 'john',
+    'Mike', 'Milton', 'mike@gmail.com', '+254700000002',
+    'savings', 'mike',
     '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', -- password
     'NXB-0002-2024', 45200.00
 );
@@ -100,7 +100,7 @@ VALUES
 (2, 'withdrawal',  5000.00, 55000.00, 'ATM withdrawal',         'TXN-20240112-003'),
 (2, 'transfer',    9800.00, 45200.00, 'Transfer to Alice',      'TXN-20240115-004'),
 (3, 'deposit',    30000.00, 30000.00, 'Initial deposit',        'TXN-20240101-005'),
-(3, 'deposit',     9800.00, 39800.00, 'Transfer from John',     'TXN-20240115-006'),
+(3, 'deposit',     9800.00, 39800.00, 'Transfer from Mike',     'TXN-20240115-006'),
 (3, 'withdrawal', 17800.00, 22000.00, 'ATM withdrawal',         'TXN-20240116-007');
 
 -- ============================================================

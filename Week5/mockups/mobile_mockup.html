@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NexaBank — Mobile Mockup</title>
+  <style>
+    :root{--bg:#f6f8fb;--card:#ffffff;--accent:#2563a8;--muted:#6b7280}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:var(--bg);display:flex;align-items:flex-start;justify-content:center;padding:20px}
+    .phone{width:375px;max-width:92vw;border-radius:28px;box-shadow:0 10px 30px rgba(16,24,40,.12);overflow:hidden;background:linear-gradient(180deg,#fff,#f8fbff)}
+    header{background:var(--accent);color:#fff;padding:14px 18px;display:flex;align-items:center;gap:12px}
+    header .brand{font-weight:700}
+    main{padding:16px}
+    .card{background:var(--card);border-radius:12px;padding:12px;margin-bottom:12px;box-shadow:0 1px 0 rgba(0,0,0,.03)}
+    .balance{display:flex;justify-content:space-between;align-items:center}
+    .balance .amount{font-size:1.2rem;font-weight:700}
+    .grid{display:flex;gap:8px;margin-top:10px}
+    .btn{display:inline-block;padding:10px 12px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;text-align:center;flex:1}
+    .muted{color:var(--muted);font-size:.9rem}
+    .form-group{margin-bottom:10px}
+    input,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef8;font-size:1rem}
+    .strength{height:8px;background:#e6eef8;border-radius:8px;overflow:hidden}
+    .strength > i{display:block;height:100%;width:0;background:#e53e3e;transition:width .18s linear}
+    nav.mobile{display:flex;gap:6px;padding:10px;background:transparent}
+    nav.mobile a{flex:1;padding:8px 6px;text-align:center;border-radius:8px;color:var(--muted);text-decoration:none;font-weight:600}
+    .active{background:#e6eef8;color:var(--accent)}
+    footer{padding:10px;text-align:center;font-size:.85rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="phone" role="region" aria-label="Mobile mockup">
+    <header>
+      <div class="brand">NexaBank</div>
+      <div style="margin-left:auto;font-size:.9rem;opacity:.9">Mobile</div>
+    </header>
+
+    <main>
+      <!-- Dashboard card -->
+      <section class="card" id="dashboard">
+        <div style="display:flex;align-items:center;gap:10px">
+          <div style="width:44px;height:44px;border-radius:10px;background:#e6eef8;display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700">AT</div>
+          <div>
+            <div style="font-weight:700">Auto Tester</div>
+            <div class="muted">Savings • NXB-2219-2026</div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px" class="balance">
+          <div>
+            <div class="muted">Current balance</div>
+            <div class="amount">KES 500.00</div>
+          </div>
+          <div style="text-align:right">
+            <div class="muted">Account type</div>
+            <div style="font-weight:600">Savings</div>
+          </div>
+        </div>
+
+        <div class="grid" style="margin-top:12px">
+          <a class="btn" href="#deposit">Deposit</a>
+          <a class="btn" href="#transfer" style="background:#10b981">Transfer</a>
+        </div>
+      </section>
+
+      <!-- Quick activity -->
+      <section class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div style="font-weight:700">New Transfer</div>
+          <div class="muted">Fast • Secure</div>
+        </div>
+
+        <form style="margin-top:8px" id="mockForm">
+          <div class="form-group">
+            <input placeholder="Recipient account (NXB-0003-2024)" id="acct">
+          </div>
+          <div class="form-group">
+            <input type="number" placeholder="Amount (KES)" id="amt">
+          </div>
+          <div class="form-group">
+            <a class="btn" href="#" onclick="alert('Demo: transfer simulated')">Send</a>
+          </div>
+        </form>
+      </section>
+
+      <!-- Register / Password strength preview -->
+      <section class="card" id="register">
+        <div style="font-weight:700">Create Account</div>
+        <div class="muted" style="font-size:.88rem;margin-top:6px">Choose a strong password</div>
+        <div style="margin-top:10px">
+          <div class="form-group"><input id="pw" placeholder="Password"></div>
+          <div class="strength"><i id="fill"></i></div>
+          <div id="pwt" class="muted" style="margin-top:6px">Strength: N/A</div>
+          <div style="margin-top:10px;display:flex;gap:8px">
+            <a class="btn" href="#" style="flex:1;background:#64748b" onclick="document.getElementById('pw').value='Passw0rd!'; update()">Use example</a>
+            <a class="btn" href="#" style="flex:1;background:#10b981" onclick="alert('Demo: register simulated')">Register</a>
+          </div>
+        </div>
+      </section>
+
+      <nav class="mobile">
+        <a href="#dashboard" class="active">Overview</a>
+        <a href="#deposit">Deposit</a>
+        <a href="#withdraw">Withdraw</a>
+        <a href="#transfer">Transfer</a>
+        <a href="#register">Register</a>
+      </nav>
+
+      <footer>Preview mockup — interactive demo for mobile layout</footer>
+    </main>
+  </div>
+
+  <script>
+    const pw = document.getElementById('pw');
+    const fill = document.getElementById('fill');
+    const pwt = document.getElementById('pwt');
+    function score(s){let sc=0; if(!s) return 0; if(s.length>=8) sc++; if(/[A-Z]/.test(s)) sc++; if(/[0-9]/.test(s)) sc++; if(/[^A-Za-z0-9]/.test(s)) sc++; return sc}
+    function update(){const s=score(pw.value); fill.style.width = (s/4*100)+'%'; let cols=['#e2e8f0','#f6ad55','#ecc94b','#48bb78','#2f855a']; fill.style.background = cols[s]; let labels=['N/A','Weak','Medium','Strong','Very Strong']; pwt.textContent = 'Strength: '+labels[s]}
+    pw.addEventListener('input', update);
+    update();
+  </script>
+</body>
+</html>
