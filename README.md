@@ -1,9 +1,9 @@
-# 🏦 NexaBank – Simple Banking System
+#  NexaBank – Simple Banking System
 ## BIT3208 Advanced Web Design and Development
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 BIT3208_Project/
@@ -17,7 +17,7 @@ BIT3208_Project/
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 ### Requirements
 - XAMPP / WAMP / Laragon (includes PHP 7.4+ & MySQL)
@@ -47,7 +47,7 @@ BIT3208_Project/
 
 ---
 
-## 🌟 Features
+##  Features
 
 | Feature              | Week  | Technology           |
 |----------------------|-------|----------------------|
@@ -75,7 +75,7 @@ BIT3208_Project/
 
 ---
 
-## 📋 Weekly Deliverables Checklist
+##  Weekly Deliverables Checklist
 
 ### Week 1
 - [x] localhost installed and tested
@@ -110,7 +110,7 @@ BIT3208_Project/
 
 ---
 
-## 🔐 Security Features
+##  Security Features
 - Prepared statements (prevents SQL injection)
 - `password_hash()` / `password_verify()` (no plain text passwords)
 - `htmlspecialchars()` (prevents XSS)
@@ -119,7 +119,7 @@ BIT3208_Project/
 
 ---
 
-## 🏗️ Technologies Used
+##  Technologies Used
 - **Frontend**: HTML5, CSS3, JavaScript (ES6)
 - **Backend**: PHP 8.x
 - **Database**: MySQL (via MySQLi)
@@ -128,4 +128,4 @@ BIT3208_Project/
 
 ---
 
-*BIT3208 Advanced Web Design and Development – Banking System Project*
+*Advanced Web Design and Development – Banking System Project*
