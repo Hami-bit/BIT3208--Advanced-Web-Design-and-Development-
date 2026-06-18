@@ -1,0 +1,14 @@
+/* Minimal subset of NexaBank Week5 styles for consistency */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7fb; color: #2d3748; padding: 20px; }
+.navbar { background: #1a3c5e; padding: 0 20px; display:flex; align-items:center; justify-content:space-between; height:65px; color:#fff; }
+.nav-brand { color:#fff; font-size:1.25rem; font-weight:700; }
+.nav-links { list-style:none; display:flex; gap:10px; }
+.nav-links a { color: rgba(255,255,255,0.9); text-decoration:none; padding:8px 12px; border-radius:5px; }
+.nav-links a:hover { background: rgba(255,255,255,0.12); }
+main { max-width:1100px; margin: 30px auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05); }
+table { border-collapse: collapse; width: 100%; max-width: 900px; }
+th { background: #f0f0f0; }
+td, th { padding: 8px; }
+.footer { text-align:center; margin-top:20px; color:#718096; }
+a { color: #2563a8; }

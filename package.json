@@ -1,0 +1,21 @@
+{
+  "name": "bankingsystem",
+  "version": "1.0.0",
+  "description": "---",
+  "main": "index.js",
+  "scripts": {
+    "dev": "php -S localhost:8000 -t Week5",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hami-bit/NexaBank.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hami-bit/NexaBank/issues"
+  },
+  "homepage": "https://github.com/Hami-bit/NexaBank#readme"
+}
