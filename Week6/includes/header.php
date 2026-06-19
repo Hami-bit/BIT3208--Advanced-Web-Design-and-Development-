@@ -12,10 +12,10 @@
   <nav class="navbar">
     <div class="nav-brand">NexaBank</div>
     <ul class="nav-links">
-      <li><a href="http://localhost:8000/">Home</a></li>
-      <li><a href="http://localhost:8000/login.php">Login</a></li>
-      <li><a href="http://localhost:8000/register.php">Register</a></li>
-      <li><a href="http://localhost:8000/dashboard.php">Dashboard</a></li>
+      <li><a href="/NexaBank_Week5/">Home</a></li>
+      <li><a href="/NexaBank_Week5/login.php">Login</a></li>
+      <li><a href="/NexaBank_Week5/register.php">Register</a></li>
+      <li><a href="/NexaBank_Week5/dashboard.php">Dashboard</a></li>
       <li><a href="index.php">Week6 Users</a></li>
     </ul>
   </nav>

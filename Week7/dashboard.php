@@ -29,7 +29,10 @@ require_once __DIR__ . '/includes/header.php';
     <li>Account: <?php echo htmlspecialchars($user['account_number']); ?></li>
     <li>Balance: <?php echo htmlspecialchars(number_format($user['balance'],2)); ?></li>
   </ul>
-  <p><a href="logout.php">Logout</a></p>
+  <p>
+    <a href="transactions.php">Make Transaction</a> |
+    <a href="logout.php">Logout</a>
+  </p>
 </main>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>

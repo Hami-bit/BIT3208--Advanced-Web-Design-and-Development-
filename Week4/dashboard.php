@@ -38,7 +38,7 @@ $initials  = strtoupper(substr($nameParts[0], 0, 1) . (isset($nameParts[1]) ? su
 <body>
 
     <nav class="navbar">
-        <div class="nav-brand">🏦 NexaBank</div>
+        <div class="nav-brand"> NexaBank</div>
         <ul class="nav-links">
             <li><a href="dashboard.php">Dashboard</a></li>
             <li><a href="deposit.php">Deposit</a></li>
