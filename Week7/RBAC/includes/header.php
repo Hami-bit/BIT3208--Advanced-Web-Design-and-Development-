@@ -32,7 +32,7 @@ if (session_status() === PHP_SESSION_NONE) {
                     <a href="#" class="dropbtn">Login</a>
                     <div class="dropdown-content">
                         <a href="login.php">User Login</a>
-                        <a href="admin/login.php">Admin Login</a>
+                        <a href="admin_login.php">Admin Login</a>
                     </div>
                 </li>
             <?php endif; ?>

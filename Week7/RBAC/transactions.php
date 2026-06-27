@@ -49,7 +49,7 @@ require_once __DIR__ . '/includes/header.php';
     </tbody>
   </table>
 
-  <p><a href="/NexaBank_Week5/dashboard.php">Back to Dashboard</a></p>
+  <p><a href="dashboard.php">Back to Dashboard</a></p>
 </main>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
